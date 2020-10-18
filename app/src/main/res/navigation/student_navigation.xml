@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home_student">
+
+    <fragment
+        android:id="@+id/nav_home_student"
+        android:name="com.example.xlabs.Student.ui.home.HomeFragment"
+        android:label="الصفحه الرئيسيه"
+        tools:layout="@layout/fragment_home" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.example.xlabs.Student.ui.Quiz.QuizFragment"
+        android:label="الاختبار"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/nav_result"
+        android:name="com.example.xlabs.Student.ui.Results.ResultsFragment"
+        android:label="النتائج"
+        tools:layout="@layout/fragment_result" />
+
+
+    <fragment
+        android:id="@+id/nav_arrangement"
+        android:name="com.example.xlabs.Student.ui.Arrangement.ArrangementFragment"
+        android:label="الترتيب"
+        tools:layout="@layout/fragment_arrangement" />
+
+
+    <fragment
+        android:id="@+id/nav_profile_student"
+        android:name="com.example.xlabs.Student.ui.Profile.ProfileFragment"
+        android:label="الصفحه الشخصيه"
+        tools:layout="@layout/fragment_student_profile" />
+</navigation>
